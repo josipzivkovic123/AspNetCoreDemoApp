@@ -15,14 +15,14 @@ namespace AspNetCoreDemoApp.Controllers
 		    Console.WriteLine(Request.GetDisplayUrl());
 		    Console.WriteLine(Request.GetEncodedUrl());
 
-			return new[] { "value1", "value2" };
+			return new[] { "Hello", "World","!" };
 		}
 
 		// GET api/values/5
 		[HttpGet("{id}")]
 		public string Get(int id)
 		{
-			return "value";
+			return "Überschrift";
 		}
 	}
 }
